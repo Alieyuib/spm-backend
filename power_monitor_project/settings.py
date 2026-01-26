@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-8*%9hgx2e+w3tp_et#3^l(@k$ivm&)vvpijw53k^62b#+ptw3k
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -71,6 +71,7 @@ SERVER_EMAIL = 'alieyuib@gmail.com'
 CORS_ALLOWED_ORIGINS = [
     "http://localhost:3000",
     "http://127.0.0.1:3000",
+    "https://smart-power-monitoring.vercel.app"
 ]
 
 # For IoT devices (ESP32)
