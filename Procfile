@@ -1,0 +1,1 @@
+web: gunicorn power_monitor_project.wsgi
