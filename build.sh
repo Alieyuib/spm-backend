@@ -16,3 +16,11 @@ python manage.py migrate
 if [[ $CREATE_SUPERUSER ]]; then
   python manage.py createsuperuser --noinput
 fi
+
+python manage.py collectstatic --noinput
+
+python manage.py generate_sample_data
+
+python manage.py create_tariffs
+
+echo "Build script completed successfully."
